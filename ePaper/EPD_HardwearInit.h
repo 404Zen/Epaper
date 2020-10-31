@@ -17,13 +17,7 @@
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_rcc.h"
 #include "../SYSTEM/systembase.h"
-#include "../SYSTEM/SysTick.h"
 #include "spi.h"
-#include "GUI_Paint.h"
-#include "ImageData.h"
-
-#include "stdlib.h"
-#include "stdio.h"
 
 
 
@@ -60,31 +54,8 @@
 
 
 /* Exported functions ------------------------------------------------------- */
-void EPD2IN13Init(uint8_t Mode);		//ePaper初始化
-void EPD2IN13Clear(void);				//清屏
-void EPD2IN13Display(uint8_t *Image);	//显示图片 将ImageBuffer显示出来
-
-
-int EPD2IN13Test(void);
-
-
-
-void EPD2IN13SetWindows(int xStart, int yStart, int xEnd, int yEnd);
-void EPD2IN13SetCursor(int x, int y);
-void EPD2IN13TurnONDisplay(void);
-
-
-
-
 void EPD2IN13IOInit(void);				//ePaper相关IO初始化
 void EPD2IN13SPIInit(void);				//ePaparSPIInit
 
-void EPD2IN13Reset(void);				//复位
-void EPD2IN13ReadBusy(void);			
-void EPD2IN13SendCMD(uint8_t Reg);		
-void EPD2IN13SendByte(uint8_t Data);
-
-void EPD2IN13WriteByte(uint8_t Reg, uint8_t Data);
-void EPD2IN13Write2Byte(uint8_t Reg, uint16_t Data);
 
 #endif  /*__EPAPER213_H__*/

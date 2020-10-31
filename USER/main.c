@@ -41,9 +41,11 @@ int main(void)
 	USART1_Init(115200);						//115200 8N1
 	printf("\r\nUSART1 Init Finished!\r\n");
 
+	EPD2IN13SPIInit();					//初始化对应的SPI
+	EPD2IN13IOInit();					//初始化相应的IO
 
-	EPD2IN13Test();
 
+	EPD_2in13_test();
 	
 	
 

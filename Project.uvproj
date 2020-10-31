@@ -652,11 +652,6 @@
           <GroupName>ePaper</GroupName>
           <Files>
             <File>
-              <FileName>ePaper213.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ePaper\ePaper213.c</FilePath>
-            </File>
-            <File>
               <FileName>GUI_Paint.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\ePaper\GUI_Paint.c</FilePath>
@@ -675,6 +670,36 @@
               <FileName>DEV_Config.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\ePaper\DEV_Config.c</FilePath>
+            </File>
+            <File>
+              <FileName>EPD_2in13_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ePaper\EPD_2in13_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>font12CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ePaper\font12CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>font20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ePaper\font20.c</FilePath>
+            </File>
+            <File>
+              <FileName>font24CN.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ePaper\font24CN.c</FilePath>
+            </File>
+            <File>
+              <FileName>EPD_HardwearInit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ePaper\EPD_HardwearInit.c</FilePath>
+            </File>
+            <File>
+              <FileName>EPD_2in13.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ePaper\EPD_2in13.c</FilePath>
             </File>
           </Files>
         </Group>

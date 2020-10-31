@@ -41,9 +41,11 @@
 .\obj\dev_config.o: ePaper\../USER/../SYSTEM/SysTick.h
 .\obj\dev_config.o: ePaper\../USER/../SYSTEM/rtc.h
 .\obj\dev_config.o: ePaper\../USER/../BSP/key.h
-.\obj\dev_config.o: ePaper\../USER/../ePaper/ePaper213.h
+.\obj\dev_config.o: ePaper\../USER/../ePaper/EPD_HardwearInit.h
 .\obj\dev_config.o: .\BSP\spi.h
+.\obj\dev_config.o: ePaper\../USER/../ePaper/EPD_Test.h
+.\obj\dev_config.o: ePaper\../USER/../ePaper/DEV_Config.h
 .\obj\dev_config.o: ePaper\../USER/../ePaper/GUI_Paint.h
 .\obj\dev_config.o: ePaper\../USER/../ePaper/fonts.h
-.\obj\dev_config.o: ePaper\../USER/../ePaper/ImageData.h
+.\obj\dev_config.o: ePaper\../USER/../ePaper/imagedata.h
 .\obj\dev_config.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

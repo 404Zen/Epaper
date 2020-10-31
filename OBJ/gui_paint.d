@@ -43,8 +43,10 @@
 .\obj\gui_paint.o: ePaper\../USER/../SYSTEM/SysTick.h
 .\obj\gui_paint.o: ePaper\../USER/../SYSTEM/rtc.h
 .\obj\gui_paint.o: ePaper\../USER/../BSP/key.h
-.\obj\gui_paint.o: ePaper\../USER/../ePaper/ePaper213.h
+.\obj\gui_paint.o: ePaper\../USER/../ePaper/EPD_HardwearInit.h
 .\obj\gui_paint.o: .\BSP\spi.h
-.\obj\gui_paint.o: ePaper\../USER/../ePaper/ImageData.h
+.\obj\gui_paint.o: ePaper\../USER/../ePaper/EPD_Test.h
+.\obj\gui_paint.o: ePaper\../USER/../ePaper/DEV_Config.h
+.\obj\gui_paint.o: ePaper\../USER/../ePaper/imagedata.h
 .\obj\gui_paint.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\gui_paint.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

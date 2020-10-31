@@ -1,7 +1,7 @@
 Dependencies for Project 'Project', Target 'Project': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (.\USER\main.c)(0x5F9537EA)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
-I (USER\main.h)(0x5F9D3297)
+F (.\USER\main.c)(0x5F9D373E)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (USER\main.h)(0x5F9D3A6D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (USER\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h)(0x4D783CB4)
 I (.\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5E981D4E)
@@ -42,11 +42,14 @@ I (USER\../SYSTEM/../BSP/led.h)(0x5F8C45A6)
 I (USER\../SYSTEM/SysTick.h)(0x5F830CE7)
 I (USER\../SYSTEM/rtc.h)(0x5F88553B)
 I (USER\../BSP/key.h)(0x5F8BFFAE)
-I (USER\../ePaper/ePaper213.h)(0x5F9D33EA)
+I (USER\../ePaper/EPD_HardwearInit.h)(0x5F9D3A5D)
 I (.\BSP\spi.h)(0x5F9D3361)
+I (USER\../ePaper/EPD_Test.h)(0x5F9D359F)
+I (USER\../ePaper/DEV_Config.h)(0x5F9D335A)
+I (USER\../ePaper/../USER/main.h)(0x5F9D3A6D)
 I (USER\../ePaper/GUI_Paint.h)(0x5F9CF97A)
 I (USER\../ePaper/fonts.h)(0x5F9CF355)
-I (USER\../ePaper/ImageData.h)(0x5F957C87)
+I (USER\../ePaper/imagedata.h)(0x5F957C87)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 F (.\USER\stm32f10x_it.c)(0x5F8464CD)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
 I (USER\stm32f10x_it.h)(0x5F94192A)
@@ -1179,46 +1182,6 @@ I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 I (SYSTEM\SysTick.h)(0x5F830CE7)
 I (SYSTEM\systembase.h)(0x5F85ABEE)
 I (SYSTEM\../BSP/led.h)(0x5F8C45A6)
-F (.\ePaper\ePaper213.c)(0x5F9D3080)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\epaper213.o --omf_browse .\obj\epaper213.crf --depend .\obj\epaper213.d)
-I (ePaper\ePaper213.h)(0x5F9D33EA)
-I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h)(0x4D783CB4)
-I (.\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5E981D4E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
-I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h)(0x4D783CAA)
-I (.\USER\stm32f10x_conf.h)(0x4D99A59E)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4D783BB4)
-I (.\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5F9D323A)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5F8C0C96)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
-I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
-I (ePaper\../SYSTEM/systembase.h)(0x5F85ABEE)
-I (ePaper\../SYSTEM/SysTick.h)(0x5F830CE7)
-I (ePaper\../SYSTEM/../BSP/led.h)(0x5F8C45A6)
-I (.\BSP\spi.h)(0x5F9D3361)
-I (ePaper\GUI_Paint.h)(0x5F9CF97A)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
-I (ePaper\fonts.h)(0x5F9CF355)
-I (ePaper\ImageData.h)(0x5F957C87)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 F (.\ePaper\GUI_Paint.c)(0x5F9D33BE)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\gui_paint.o --omf_browse .\obj\gui_paint.crf --depend .\obj\gui_paint.d)
 I (ePaper\GUI_Paint.h)(0x5F9CF97A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
@@ -1253,7 +1216,7 @@ I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 I (ePaper\DEV_Config.h)(0x5F9D335A)
-I (ePaper\../USER/main.h)(0x5F9D3297)
+I (ePaper\../USER/main.h)(0x5F9D3A6D)
 I (ePaper\../USER/../SYSTEM/flash.h)(0x5F85A616)
 I (ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h)(0x5F85ABEE)
 I (ePaper\../USER/../SYSTEM/usart.h)(0x5F032D83)
@@ -1264,9 +1227,11 @@ I (ePaper\../USER/../SYSTEM/../BSP/led.h)(0x5F8C45A6)
 I (ePaper\../USER/../SYSTEM/SysTick.h)(0x5F830CE7)
 I (ePaper\../USER/../SYSTEM/rtc.h)(0x5F88553B)
 I (ePaper\../USER/../BSP/key.h)(0x5F8BFFAE)
-I (ePaper\../USER/../ePaper/ePaper213.h)(0x5F9D33EA)
+I (ePaper\../USER/../ePaper/EPD_HardwearInit.h)(0x5F9D3A5D)
 I (.\BSP\spi.h)(0x5F9D3361)
-I (ePaper\../USER/../ePaper/ImageData.h)(0x5F957C87)
+I (ePaper\../USER/../ePaper/EPD_Test.h)(0x5F9D359F)
+I (ePaper\../USER/../ePaper/DEV_Config.h)(0x5F9D335A)
+I (ePaper\../USER/../ePaper/imagedata.h)(0x5F957C87)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5D9AD212)
 F (.\ePaper\ImageData.c)(0x5F9966EA)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\imagedata.o --omf_browse .\obj\imagedata.crf --depend .\obj\imagedata.d)
@@ -1305,7 +1270,7 @@ I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
-I (ePaper\../USER/main.h)(0x5F9D3297)
+I (ePaper\../USER/main.h)(0x5F9D3A6D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (ePaper\../USER/../SYSTEM/flash.h)(0x5F85A616)
 I (ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h)(0x5F85ABEE)
@@ -1317,9 +1282,157 @@ I (ePaper\../USER/../SYSTEM/../BSP/led.h)(0x5F8C45A6)
 I (ePaper\../USER/../SYSTEM/SysTick.h)(0x5F830CE7)
 I (ePaper\../USER/../SYSTEM/rtc.h)(0x5F88553B)
 I (ePaper\../USER/../BSP/key.h)(0x5F8BFFAE)
-I (ePaper\../USER/../ePaper/ePaper213.h)(0x5F9D33EA)
+I (ePaper\../USER/../ePaper/EPD_HardwearInit.h)(0x5F9D3A5D)
 I (.\BSP\spi.h)(0x5F9D3361)
+I (ePaper\../USER/../ePaper/EPD_Test.h)(0x5F9D359F)
+I (ePaper\../USER/../ePaper/DEV_Config.h)(0x5F9D335A)
 I (ePaper\../USER/../ePaper/GUI_Paint.h)(0x5F9CF97A)
 I (ePaper\../USER/../ePaper/fonts.h)(0x5F9CF355)
-I (ePaper\../USER/../ePaper/ImageData.h)(0x5F957C87)
+I (ePaper\../USER/../ePaper/imagedata.h)(0x5F957C87)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
+F (.\ePaper\EPD_2in13_test.c)(0x5F9D35FC)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\epd_2in13_test.o --omf_browse .\obj\epd_2in13_test.crf --depend .\obj\epd_2in13_test.d)
+I (ePaper\EPD_Test.h)(0x5F9D359F)
+I (ePaper\DEV_Config.h)(0x5F9D335A)
+I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h)(0x4D783CB4)
+I (.\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5E981D4E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
+I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h)(0x4D783CAA)
+I (.\USER\stm32f10x_conf.h)(0x4D99A59E)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (.\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5F9D323A)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5F8C0C96)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (ePaper\../USER/main.h)(0x5F9D3A6D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (ePaper\../USER/../SYSTEM/flash.h)(0x5F85A616)
+I (ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h)(0x5F85ABEE)
+I (ePaper\../USER/../SYSTEM/usart.h)(0x5F032D83)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5D9AD21A)
+I (ePaper\../USER/../SYSTEM/timer.h)(0x5F5A3319)
+I (ePaper\../USER/../SYSTEM/../BSP/led.h)(0x5F8C45A6)
+I (ePaper\../USER/../SYSTEM/SysTick.h)(0x5F830CE7)
+I (ePaper\../USER/../SYSTEM/rtc.h)(0x5F88553B)
+I (ePaper\../USER/../BSP/key.h)(0x5F8BFFAE)
+I (ePaper\../USER/../ePaper/EPD_HardwearInit.h)(0x5F9D3A5D)
+I (.\BSP\spi.h)(0x5F9D3361)
+I (ePaper\../USER/../ePaper/EPD_Test.h)(0x5F9D359F)
+I (ePaper\GUI_Paint.h)(0x5F9CF97A)
+I (ePaper\fonts.h)(0x5F9CF355)
+I (ePaper\imagedata.h)(0x5F957C87)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)
+I (ePaper\EPD_2in13.h)(0x5F9D3491)
+F (.\ePaper\font12CN.c)(0x5F9D3672)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\font12cn.o --omf_browse .\obj\font12cn.crf --depend .\obj\font12cn.d)
+I (ePaper\fonts.h)(0x5F9CF355)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
+F (.\ePaper\font20.c)(0x5F9D3672)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\font20.o --omf_browse .\obj\font20.crf --depend .\obj\font20.d)
+I (ePaper\fonts.h)(0x5F9CF355)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
+F (.\ePaper\font24CN.c)(0x5F9D3672)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\font24cn.o --omf_browse .\obj\font24cn.crf --depend .\obj\font24cn.d)
+I (ePaper\fonts.h)(0x5F9CF355)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
+F (.\ePaper\EPD_HardwearInit.c)(0x5F9D3A9E)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\epd_hardwearinit.o --omf_browse .\obj\epd_hardwearinit.crf --depend .\obj\epd_hardwearinit.d)
+I (ePaper\EPD_HardwearInit.h)(0x5F9D3A5D)
+I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h)(0x4D783CB4)
+I (.\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5E981D4E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
+I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h)(0x4D783CAA)
+I (.\USER\stm32f10x_conf.h)(0x4D99A59E)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (.\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5F9D323A)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5F8C0C96)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (ePaper\../SYSTEM/systembase.h)(0x5F85ABEE)
+I (.\BSP\spi.h)(0x5F9D3361)
+F (.\ePaper\EPD_2in13.c)(0x5F9D34F4)(-c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I .\STM32F10x_StdPeriph_Driver\inc -I .\MDK-ARM -I .\CMSIS\CM3\CoreSupport -I .\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\USER -I .\BSP -I .\SYSTEM -I .\ePaper-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\obj\epd_2in13.o --omf_browse .\obj\epd_2in13.crf --depend .\obj\epd_2in13.d)
+I (ePaper\EPD_2in13.h)(0x5F9D3491)
+I (ePaper\DEV_Config.h)(0x5F9D335A)
+I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h)(0x4D783CB4)
+I (.\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5E981D4E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F033ED1)
+I (ePaper\../CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h)(0x4D783CAA)
+I (.\USER\stm32f10x_conf.h)(0x4D99A59E)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (.\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x4D783CB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5F9D323A)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5F8C0C96)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
+I (ePaper\../USER/main.h)(0x5F9D3A6D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
+I (ePaper\../USER/../SYSTEM/flash.h)(0x5F85A616)
+I (ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h)(0x5F85ABEE)
+I (ePaper\../USER/../SYSTEM/usart.h)(0x5F032D83)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5D9AD21A)
+I (ePaper\../USER/../SYSTEM/timer.h)(0x5F5A3319)
+I (ePaper\../USER/../SYSTEM/../BSP/led.h)(0x5F8C45A6)
+I (ePaper\../USER/../SYSTEM/SysTick.h)(0x5F830CE7)
+I (ePaper\../USER/../SYSTEM/rtc.h)(0x5F88553B)
+I (ePaper\../USER/../BSP/key.h)(0x5F8BFFAE)
+I (ePaper\../USER/../ePaper/EPD_HardwearInit.h)(0x5F9D3A5D)
+I (.\BSP\spi.h)(0x5F9D3361)
+I (ePaper\../USER/../ePaper/EPD_Test.h)(0x5F9D359F)
+I (ePaper\../USER/../ePaper/DEV_Config.h)(0x5F9D335A)
+I (ePaper\../USER/../ePaper/GUI_Paint.h)(0x5F9CF97A)
+I (ePaper\../USER/../ePaper/fonts.h)(0x5F9CF355)
+I (ePaper\../USER/../ePaper/imagedata.h)(0x5F957C87)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5D9AD21A)

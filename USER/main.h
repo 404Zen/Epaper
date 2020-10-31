@@ -45,7 +45,8 @@
 #include "../BSP/key.h"
 
 //ePaper
-#include "../ePaper/ePaper213.h"
+#include "../ePaper/EPD_HardwearInit.h"
+#include "../ePaper/EPD_Test.h"
 
 
 

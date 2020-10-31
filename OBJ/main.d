@@ -40,9 +40,12 @@
 .\obj\main.o: USER\../SYSTEM/SysTick.h
 .\obj\main.o: USER\../SYSTEM/rtc.h
 .\obj\main.o: USER\../BSP/key.h
-.\obj\main.o: USER\../ePaper/ePaper213.h
+.\obj\main.o: USER\../ePaper/EPD_HardwearInit.h
 .\obj\main.o: .\BSP\spi.h
+.\obj\main.o: USER\../ePaper/EPD_Test.h
+.\obj\main.o: USER\../ePaper/DEV_Config.h
+.\obj\main.o: USER\../ePaper/../USER/main.h
 .\obj\main.o: USER\../ePaper/GUI_Paint.h
 .\obj\main.o: USER\../ePaper/fonts.h
-.\obj\main.o: USER\../ePaper/ImageData.h
+.\obj\main.o: USER\../ePaper/imagedata.h
 .\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

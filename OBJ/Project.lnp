@@ -39,11 +39,16 @@
 ".\obj\timer.o"
 ".\obj\systick.o"
 ".\obj\rtc.o"
-".\obj\epaper213.o"
 ".\obj\gui_paint.o"
 ".\obj\imagedata.o"
 ".\obj\font16.o"
 ".\obj\dev_config.o"
+".\obj\epd_2in13_test.o"
+".\obj\font12cn.o"
+".\obj\font20.o"
+".\obj\font24cn.o"
+".\obj\epd_hardwearinit.o"
+".\obj\epd_2in13.o"
 --strict --scatter ".\OBJ\Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
