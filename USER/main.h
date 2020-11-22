@@ -33,6 +33,9 @@
 #include "../CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h"
 
 
+//Application
+#include "eClock.h"
+
 //system
 #include "../SYSTEM/flash.h"
 #include "../SYSTEM/usart.h"

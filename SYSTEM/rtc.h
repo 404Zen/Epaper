@@ -52,4 +52,9 @@ uint8_t	DayOfWeek(uint16_t Year, uint8_t Month, uint8_t Day);//星期几计算
 //根据年月日时分秒设置RTC_CNT
 uint8_t	SetRTCCNTReg(CalendarStruct	CalendarSet);
 
+
+void StandbyInit(void);
+void EnterStandby(void);
+void AlarmRefreshTime(void);
+
 #endif		

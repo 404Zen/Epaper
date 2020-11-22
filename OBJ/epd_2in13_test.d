@@ -32,6 +32,10 @@
 .\obj\epd_2in13_test.o: .\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\epd_2in13_test.o: ePaper\../USER/main.h
 .\obj\epd_2in13_test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\epd_2in13_test.o: ePaper\../USER/eClock.h
+.\obj\epd_2in13_test.o: ePaper\../USER/main.h
+.\obj\epd_2in13_test.o: ePaper\../USER/../ePaper/EPD_2in13.h
+.\obj\epd_2in13_test.o: ePaper\../USER/../ePaper/DEV_Config.h
 .\obj\epd_2in13_test.o: ePaper\../USER/../SYSTEM/flash.h
 .\obj\epd_2in13_test.o: ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h
 .\obj\epd_2in13_test.o: ePaper\../USER/../SYSTEM/usart.h
@@ -49,4 +53,3 @@
 .\obj\epd_2in13_test.o: ePaper\fonts.h
 .\obj\epd_2in13_test.o: ePaper\imagedata.h
 .\obj\epd_2in13_test.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\obj\epd_2in13_test.o: ePaper\EPD_2in13.h

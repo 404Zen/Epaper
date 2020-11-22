@@ -24,6 +24,8 @@
 
 /* Private functions ---------------------------------------------------------*/
 
+
+
 /**
   * @brief  Main program.
   * @param  None
@@ -32,6 +34,7 @@
 int main(void)
 {
 	static uint32_t MainLoopTimer = 0;
+	uint8_t i = 0;
 
 	RCC_Configuration();
 	SysTickInit();
@@ -44,23 +47,31 @@ int main(void)
 	EPD2IN13SPIInit();					//初始化对应的SPI
 	EPD2IN13IOInit();					//初始化相应的IO
 
-
-	EPD_2in13_test();
-	
-	
-
-//	while (0 == RTC_Init())
-//	{
-//		;		//RTC Initial Fail!
-//	}
+	while (0 == RTC_Init())
+	{
+		i++;		
+		if(i >= 250)
+		{
+			//RTC Initial Fail!
+			printf("RTC Initial Fail!...\r\n");
+			break;
+		}
+	}
 
 	TimerReload(&MainLoopTimer);
+	
+//	StartUpShow();
+	StandbyInit();
+	eClockInit();
 
 	while (1)
 	{
 
 		KeyScan();
 		KeyTest();
+		AlarmInit();
+
+		// eClcokService();
 
 		//运行指示灯
 		if(TRUE == TimerDelay(&MainLoopTimer, 500))

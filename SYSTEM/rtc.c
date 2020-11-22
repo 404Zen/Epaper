@@ -79,7 +79,7 @@ uint8_t RTC_Init(void)
 	else		
 	{
 		RTC_WaitForSynchro();								//等待最近一次对RTC寄存器的操作完成
-		RTC_ITConfig(RTC_IT_SEC, ENABLE);					//使能RTC秒中断
+		RTC_ITConfig(RTC_IT_SEC | RTC_IT_ALR, ENABLE);		//使能RTC秒中断
 		RTC_WaitForLastTask();								//等待最后一次RTC寄存器操作完成
 	}
 
@@ -105,14 +105,18 @@ void RTC_IRQHandler(void)
 	//秒中断，刷新时间
 	if(RESET != RTC_GetITStatus(RTC_IT_SEC))
 	{
-		RTC_TimeReFresh();
 		RTC_ClearITPendingBit(RTC_IT_SEC);
+		RTC_TimeReFresh();
+		// eClockRefresh();
 	}
 	//闹钟中断，
 	if(RESET != RTC_GetITStatus(RTC_IT_ALR))
 	{
 		RTC_ClearITPendingBit(RTC_IT_ALR);					//清除中断
-
+		RTC_TimeReFresh();									//刷新时间
+		eClockRefresh();
+		AlarmRefreshTime();
+		// EnterStandby();
 	}
 	
 	RTC_ClearITPendingBit(RTC_IT_OW);
@@ -339,4 +343,75 @@ uint8_t	SetRTCCNTReg(CalendarStruct	CalendarSet)
 
 	return 1;
 }
+
+
+
+void StandbyInit(void)
+{
+	EXTI_InitTypeDef EXTI_InitStructure;
+
+	EXTI_InitStructure.EXTI_Line = EXTI_Line17;				//设置按键所有的外部线路
+	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;		//设外外部中断模式:EXTI线路为中断请求
+	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising; 	//上升沿触发
+ 	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+	EXTI_Init(&EXTI_InitStructure);							// 初始化外部中断
+
+	// NVIC_InitStructure.NVIC_IRQChannel = RTC_IRQn;			//使能按键所在的外部中断通道
+	// NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0; //先占优先级2级
+	// NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;		//从优先级2级
+	// NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//使能外部中断通道
+	// NVIC_Init(&NVIC_InitStructure);							//根据NVIC_InitStruct中指定的参数初始化外设NVIC寄存器
+}
+
+void EnterStandby(void)
+{
+	// RCC->APB2RSTR |= 0x01FC;				//复位所有IO口
+	
+
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR, ENABLE);		//使能PWR外设时钟
+	PWR_EnterSTANDBYMode();
+}
+
+void AlarmInit(void)
+{
+	static uint8_t Flag = 0;
+	uint32_t RTCValue = 0;
+
+	if(0 == Flag)
+	{
+		RTCValue = RTC_GetCounter();
+
+		//等待操作完成
+		RTC_WaitForLastTask();
+
+		if(RTCValue % 60 == 0)
+		{
+			RTCValue += 60;
+			RTC_SetAlarm(RTCValue);
+			eClockRefresh();
+			Flag = 1;
+			
+			EnterStandby();
+		}
+	}
+}
+
+void AlarmRefreshTime(void)
+{
+	uint32_t RTCValue = 0;
+
+	RTCValue = RTC_GetCounter();
+	//等待操作完成
+	RTC_WaitForLastTask();
+
+//	if(RTCValue % 60 == 0)
+	{
+		RTCValue += 59;
+		RTC_SetAlarm(RTCValue);
+		
+		EnterStandby();
+	}
+	
+}
+
 

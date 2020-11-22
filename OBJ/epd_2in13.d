@@ -32,6 +32,9 @@
 .\obj\epd_2in13.o: .\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\epd_2in13.o: ePaper\../USER/main.h
 .\obj\epd_2in13.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\epd_2in13.o: ePaper\../USER/eClock.h
+.\obj\epd_2in13.o: ePaper\../USER/main.h
+.\obj\epd_2in13.o: ePaper\../USER/../ePaper/EPD_2in13.h
 .\obj\epd_2in13.o: ePaper\../USER/../SYSTEM/flash.h
 .\obj\epd_2in13.o: ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h
 .\obj\epd_2in13.o: ePaper\../USER/../SYSTEM/usart.h

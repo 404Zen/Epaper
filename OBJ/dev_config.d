@@ -31,6 +31,10 @@
 .\obj\dev_config.o: .\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\dev_config.o: ePaper\../USER/main.h
 .\obj\dev_config.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\dev_config.o: ePaper\../USER/eClock.h
+.\obj\dev_config.o: ePaper\../USER/main.h
+.\obj\dev_config.o: ePaper\../USER/../ePaper/EPD_2in13.h
+.\obj\dev_config.o: ePaper\../USER/../ePaper/DEV_Config.h
 .\obj\dev_config.o: ePaper\../USER/../SYSTEM/flash.h
 .\obj\dev_config.o: ePaper\../USER/../SYSTEM/../SYSTEM/systembase.h
 .\obj\dev_config.o: ePaper\../USER/../SYSTEM/usart.h
@@ -44,7 +48,6 @@
 .\obj\dev_config.o: ePaper\../USER/../ePaper/EPD_HardwearInit.h
 .\obj\dev_config.o: .\BSP\spi.h
 .\obj\dev_config.o: ePaper\../USER/../ePaper/EPD_Test.h
-.\obj\dev_config.o: ePaper\../USER/../ePaper/DEV_Config.h
 .\obj\dev_config.o: ePaper\../USER/../ePaper/GUI_Paint.h
 .\obj\dev_config.o: ePaper\../USER/../ePaper/fonts.h
 .\obj\dev_config.o: ePaper\../USER/../ePaper/imagedata.h

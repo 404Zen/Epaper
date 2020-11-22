@@ -233,7 +233,7 @@ parameter:
 void EPD_2IN13_Display(UBYTE *Image)
 {
     UWORD Width, Height;
-		UWORD i,j;
+    UWORD i,j;
 	
     Width = (EPD_2IN13_WIDTH % 8 == 0)? (EPD_2IN13_WIDTH / 8 ): (EPD_2IN13_WIDTH / 8 + 1);
     Height = EPD_2IN13_HEIGHT;

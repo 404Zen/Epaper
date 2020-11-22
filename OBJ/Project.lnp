@@ -1,6 +1,7 @@
 --cpu Cortex-M3
 ".\obj\main.o"
 ".\obj\stm32f10x_it.o"
+".\obj\eclock.o"
 ".\obj\misc.o"
 ".\obj\stm32f10x_adc.o"
 ".\obj\stm32f10x_bkp.o"
@@ -49,6 +50,7 @@
 ".\obj\font24cn.o"
 ".\obj\epd_hardwearinit.o"
 ".\obj\epd_2in13.o"
+".\obj\font36thoma.o"
 --strict --scatter ".\OBJ\Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
