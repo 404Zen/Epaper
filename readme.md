@@ -8,17 +8,3 @@
 	BUSY			<-->		PA3			Busy state output pin, When BUSY is low, the chip is busy
 
 
-***中断优先级配置***
-	中断优先级分组2
-
-    NVIC_IRQChannel	|PreemptionPriority	|SubPriority
-	
-***进度表***
-
-    1.驱动屏幕完成
-    2.
-    
-
-***已知问题***
-    
-    1.
